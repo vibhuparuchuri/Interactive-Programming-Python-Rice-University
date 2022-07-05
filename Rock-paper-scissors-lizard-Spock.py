@@ -26,7 +26,7 @@ def name_to_number(name):
     elif(name=="scissors"):
         return 4
     else:
-        print "Error:Wrong input"
+        print("Error:Wrong input")
 
     # convert name to number using if/elif/else
     # don't forget to return the result!
@@ -45,7 +45,7 @@ def number_to_name(number):
     elif(number==4):
         return "scissors"
     else:
-        print "Error:Wrong input"
+        print("Error:Wrong input")
     
     # convert number to a name using if/elif/else
     # don't forget to return the result!
@@ -53,19 +53,19 @@ def number_to_name(number):
 
 def rpsls(player_choice): 
     # delete the following pass statement and fill in your code below
-    print " "
-    print "Player chooses " + player_choice
+    print(" ")
+    print("Player chooses " + player_choice)
     player_number=name_to_number(player_choice)
     comp_number=random.randrange(0,5)
     comp_choice=number_to_name(comp_number)
-    print "Computer chooses " + comp_choice
+    print("Computer chooses " + comp_choice)
     difference=(comp_number-player_number)%5
     if(difference==1 or difference==2):
-        print "Computer wins!"
+        print("Computer wins!")
     elif(difference==3 or difference==4):
-        print "Player wins!"
+        print("Player wins!")
     else:
-        print "Player and computer tie!"
+        print("Player and computer tie!")
     
     
     # print a blank line to separate consecutive games
